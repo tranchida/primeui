@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'tranchida:primeui',
+  name: 'giampaolo:primeui',
   version: '1.0.0',
   // Brief, one-line summary of the package.
   summary: 'add PrimeFaces PrimeUI 2.0 minified js and css to meteor project',
@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
   api.use('jquery', 'client');
-  api.use('mizzao:jquery-ui', 'client');
+  api.use('mizzao:jquery-ui@1.11.2', 'client');
   api.addFiles('primeui-2.0-min.css', 'client');
   api.addFiles('primeui-2.0-min.js', 'client');
 });
